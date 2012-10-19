@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="PSR-0 Resource Locator Test Suite">
+            <directory>./tests/Dflydev/Psr0ResourceLocator</directory>
+            <exclude>
+                <directory>./tests/Dflydev/Psr0ResourceLocator/Api</directory>
+            </exclude>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./src/Dflydev/Psr0ResourceLocator/</directory>
+        </whitelist>
+    </filter>
+</phpunit>

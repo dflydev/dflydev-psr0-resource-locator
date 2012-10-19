@@ -32,6 +32,9 @@ This library can installed by [Composer][4].
 Usage
 -----
 
+The following is an example using the Composer PSR-0 Resource
+Locator implementation ([dflydev/psr0-resource-locator-composer][2]):
+
 ```php
 <?php
 
@@ -61,6 +64,19 @@ capable of finding any directory/directories as long as they follow
 [PSR-0][1] naming guidelines *and the mapping was registered*.
 
 
+Gotchas
+-------
+
+Keep in mind a few rules:
+
+ * Only resources that *actually exist* will be returned.
+ * The order in which namespaces are checked will be determined by
+   the underlying implementation. However, it is recommended that
+   implementations search more specific namespace prefixes first.
+   That is, `Foo\Bar\Baz` should be checked before `Foo\Bar` if both
+   are registered.
+
+
 Know Implementations
 --------------------
 
@@ -72,6 +88,13 @@ in use at runtime and accesses its namespace map.
 
 For any project that uses Composer this is the implementation you are
 looking for.
+
+
+Implementation Guidelines
+-------------------------
+
+Ensure that more specific namespace prefixes are searched first. That is,
+`Foo\Bar\Baz` should be checked before `Foo\Bar` if both are registered.
 
 
 License

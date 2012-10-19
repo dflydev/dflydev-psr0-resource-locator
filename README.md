@@ -26,7 +26,7 @@ Requirements
 Installation
 ------------
 
-This library can installed by [Composer][3].
+This library can installed by [Composer][4].
 
 
 Usage
@@ -83,22 +83,21 @@ MIT, see LICENSE.
 Community
 ---------
 
-If you have questions or want to help out, join us in the [#dflydev][#dflydev]
+If you have questions or want to help out, join us in the [#dflydev][5]
 channel on irc.freenode.net.
 
 
 Not Invented Here
 -----------------
 
-Based on the `classpath:` concept from [Spring Framework][5].
+Based on the `classpath:` concept from [Spring Framework][6].
 
 
 [1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 [2]: https://github.com/dflydev/dflydev-psr0-resource-locator-composer
 [3]: https://github.com/dflydev/dflydev-composer-autoload
 [4]: http://getcomposer.org/
-[5]: http://www.springsource.org/spring-framework
-
-[#dflydev]: irc://irc.freenode.net/#dflydev
+[5]: irc://irc.freenode.net/#dflydev
+[6]: http://www.springsource.org/spring-framework
 
 

@@ -16,10 +16,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3"
-    },
-    "suggest": {
-        "dflydev/psr0-resource-locator-composer": "PSR-0 Resource Locator for use with Composer managed projects"
+        "php": ">=5.3.3",
+        "dflydev/psr0-resource-locator-implementation": "1.0.0-alpha"
     },
     "autoload": {
         "psr-0": {

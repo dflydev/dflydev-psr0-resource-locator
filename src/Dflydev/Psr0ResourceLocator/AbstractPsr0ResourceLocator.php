@@ -107,7 +107,7 @@ abstract class AbstractPsr0ResourceLocator implements Psr0ResourceLocatorInterfa
 
         $directories = array();
         foreach ($this->map as $namespace => $dirs) {
-            if (0 === strpos($namespaceish, $namespace)) {
+            if ($namespace == "" || 0 === strpos($namespaceish, $namespace)) {
                 foreach ($dirs as $dir) {
                     if (is_dir($directory = $dir.'/'.$searchPath)) {
                         $directories[] = $directory;
